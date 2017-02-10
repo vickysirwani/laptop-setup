@@ -70,10 +70,10 @@ pip install --upgrade pip
 
 sudo pip install virtualenv
 
-sudo apt-get install sublime-text-installer
+sudo apt-get install -y sublime-text-installer
 
 sudo apt-get install -y tlp tlp-rdw
-sudo apt-get install tp-smapi-dkms acpitool
+sudo apt-get install -y tp-smapi-dkms acpitool
 sudo tlp start
 
 sudo apt-get install -y smartmontools ethtool
