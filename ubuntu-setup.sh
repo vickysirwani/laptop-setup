@@ -5,6 +5,10 @@ sudo add-apt-repository ppa:videolan/stable-daily
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
 sudo add-apt-repository ppa:linrunner/tlp
+wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
+echo "deb http://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
+
+
 
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
 
@@ -38,6 +42,8 @@ bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linu
 
 sudo apt-get install -y gnome-terminal
 
+
+
 sudo apt-get install -y rpl
 
 sudo apt-get install -y s3cmd
@@ -54,9 +60,6 @@ sudo apt-get install -y keepass2
 sudo echo "module/hid_apple/parameters/fnmode = 2" | sudo tee -a /etc/sysfs.conf
 
 sudo apt install -y ubuntu-make
-
-
-sudo apt-get install -y intellij-idea-community
 
 sudo apt-get install -y vlc
 
@@ -77,4 +80,10 @@ sudo apt-get install -y tp-smapi-dkms acpitool
 sudo tlp start
 
 sudo apt-get install -y smartmontools ethtool
+
+umake ide idea
+
+sudo apt-get install -y rcm
+env RCRC=$HOME/dotfiles/rcrc rcup
+
 
