@@ -1,10 +1,11 @@
 sudo add-apt-repository ppa:webupd8team/java
 sudo add-apt-repository ppa:rquillo/ansible
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make  
-sudo add-apt-repository ppa:mmk2410/intellij-idea-community
 sudo add-apt-repository ppa:videolan/stable-daily
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
 sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+sudo add-apt-repository ppa:linrunner/tlp
+
 wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
 
 sudo wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
@@ -70,3 +71,10 @@ pip install --upgrade pip
 sudo pip install virtualenv
 
 sudo apt-get install sublime-text-installer
+
+sudo apt-get install -y tlp tlp-rdw
+
+sudo tlp start
+
+sudo apt-get install -y smartmontools ethtool
+
