@@ -3,6 +3,8 @@ sudo add-apt-repository ppa:rquillo/ansible
 sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make  
 sudo add-apt-repository ppa:mmk2410/intellij-idea-community
 sudo add-apt-repository ppa:videolan/stable-daily
+sudo add-apt-repository ppa:webupd8team/sublime-text-3
+
 sudo wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
 sudo apt-add-repository ppa:jtaylor/keepass
 
@@ -62,3 +64,5 @@ sudo apt-get install -y python-pip
 pip install --upgrade pip
 
 sudo pip install virtualenv
+
+sudo apt-get install sublime-text-installer
