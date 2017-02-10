@@ -82,6 +82,7 @@ sudo tlp start
 sudo apt-get install -y smartmontools ethtool
 
 umake ide idea
+umake ide pycharm
 
 sudo apt-get install -y rcm
 env RCRC=$HOME/dotfiles/rcrc rcup
