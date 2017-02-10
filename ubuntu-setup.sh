@@ -86,4 +86,6 @@ umake ide idea
 sudo apt-get install -y rcm
 env RCRC=$HOME/dotfiles/rcrc rcup
 
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
+echo "zsh" >>  ~/.bashrc
