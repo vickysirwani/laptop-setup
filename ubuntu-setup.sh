@@ -4,6 +4,8 @@ sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
 sudo add-apt-repository ppa:mmk2410/intellij-idea-community
 sudo add-apt-repository ppa:videolan/stable-daily
 sudo add-apt-repository ppa:webupd8team/sublime-text-3
+sudo add-apt-repository 'deb https://deb.opera.com/opera-stable/ stable non-free'
+wget -qO- https://deb.opera.com/archive.key | sudo apt-key add -
 
 sudo wget -O/etc/apt/sources.list.d/s3tools.list http://s3tools.org/repo/deb-all/stable/s3tools.list
 sudo apt-add-repository ppa:jtaylor/keepass
@@ -28,6 +30,8 @@ cd /tmp
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo apt-get -f install
+
+sudo apt-get install opera-stable
 
 bash <(wget -qO- https://raw.githubusercontent.com/thoughtbot/laptop/master/linux)
 
