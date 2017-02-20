@@ -1,3 +1,4 @@
+#!/bin/bash
 ideaulti=~/.IntelliJIdea*/config
 ideac=~/.IdeaIC*/config
 if [[ -d  $ideaulti ]]; then
